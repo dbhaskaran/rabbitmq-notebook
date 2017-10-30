@@ -13,7 +13,7 @@ A repository for learning and mastering rabbit-mq AMQP using Java for client pro
 #### Docker Containers
 RabbitMQ on Docker:
 ```shell
-$ $ docker run -dit --name rabbitmq_server -p 15672:15672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin rabbitmq:3.6.12-management
+$ docker run -dit --name rabbitmq_server -p 5672:5672 -p 15672:15672 -e RABBITMQ_DEFAULT_USER=admin -e RABBITMQ_DEFAULT_PASS=admin rabbitmq:3.6.12-management
 ```
 You will be able to access the RabbitMQ management console on http://localhost:15672 and login using username:"admin" and password:"admin"
 
